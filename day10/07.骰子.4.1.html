@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>骰子</title>
+    <style>
+        html{
+            background-color: #000;
+        }
+        .touzi{
+            margin: 50px;
+            width: 130px;
+            height: 130px;
+            background-color: #e4dfdf;
+            border-radius: 10px;
+            flex-wrap: wrap;
+            display: flex;
+            padding: 5px;
+            box-sizing: border-box;
+            /* 改变主轴的方向为纵向 */
+            /* 在交叉轴上居左 */
+            align-items: flex-start;
+            box-shadow: 
+                    /* 0px -5px 0 0 #fff,   */
+                    5px 0px 0 0 #a5a5a5,  
+                    0px 5px 0 0 #a5a5a5,  
+                    -5px 5px 0 0 #a5a5a5,
+                    5px 5px 0 0 #a5a5a5,
+                    5px -5px 0 0 #fff,
+                    -5px -5px 0 0 #fff;
+        }
+        .touzi .point{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #222;
+            box-shadow: 
+                0 -5px 0 0 rgb(119, 116, 116) inset,
+                0 5px 0 0 rgb(0, 0, 0) inset;
+        }
+        .box{
+            width: 100%;
+            height: 33.333%;
+            /* background-color: #f08; */
+            display: flex;
+            align-items: center;
+        }
+        .box:nth-child(1){
+            justify-content: space-between;
+            /* background-color: #545; */
+            /* align-items: center; */
+        }
+        .box:nth-child(3){
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="touzi">
+        <div class="box"><div class="point"> </div><div class="point"> </div><div class="point"> </div></div>
+        <div class="box"></div>
+        <div class="box"><div class="point"> </div></div>
+    </div>
+</body>
+</html>

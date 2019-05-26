@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景颜色</title>
+    <style>
+        .mydiv, #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 136);
+            line-height: 200px;
+        }
+        .mydiv{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(12,23,34,.3);
+            width: 100%;
+            height: 100%;
+            /* 内容在水平方向居中 */
+            text-align: center;
+        }
+        .myimg{
+            /* width: 500px; */
+            /* margin: 0 auto; */
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+        <img src="./image/59.jpg" alt="" class="myimg">
+    </div>
+
+    <div id="mydiv">文字信息</div>
+</body>
+</html>

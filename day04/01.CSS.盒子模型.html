@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .f{
+            width: 300px;
+            height: 300px;
+            background-color: #008;
+            /* border: 1px solid #f87; */
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        #mdiv {
+            width: 200px;
+            height: 200px;
+            background-color: #f08;
+            /* 外边距 */
+            /* 只有一个值：四个方向 */
+            /* 两个值：上下  左右 */
+            /* 三个值： 上  左右   下*/
+            /* 四个值：顺时针 */
+            margin: 10px 20px 30px;
+        }
+        .u{
+            margin-top: 60px;
+            width: 100px;
+            height: 100px;
+            background-color: #567;
+            /* 内边距 */
+            padding: 10px;
+            /* 边框线 */
+            border: 1px solid #f06;
+            /* 圆角效果 */
+            border-radius: 50%;
+            /* 阴影效果 */
+            box-shadow: 5px  3px  2px  3px  #308  inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="f">
+        <div id="mdiv">
+            盒子
+        </div>
+    </div>
+
+    <div class="u">
+            只能控制盒子，从而达到控制信息的效果
+            只能控制
+    </div>
+</body>
+
+</html>

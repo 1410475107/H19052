@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>并集选择器和交集选择器</title>
+    <style>
+        div,
+        p,
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: #f05;
+        }
+        li{
+            font-weight: 600;
+            font-family: 微软雅黑;
+        }
+        /* 交集选择器：中间没有空格 */
+        li.open, i.open{
+            color: #f05;
+            /* 清除斜体 */
+            font-style: normal;
+            /* font-style: initial; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        我的盒子
+    </div>
+    <p>
+        我的段落信息
+    </p>
+    <!-- span是行内标签，没有自己的宽度和高度 -->
+    <span>
+        我的文字信息
+    </span>
+    <ul>
+        <li>罗娟</li>
+        <li>舒登波</li>
+        <li class="open">莫莉</li>
+        <li>陈忠来</li>
+        <li>谢文杰</li>
+    </ul>
+
+    <i class="open">
+        文字信息
+    </i>
+</body>
+
+</html>

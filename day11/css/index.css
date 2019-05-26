@@ -1,0 +1,175 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 16px;
+    background-color: #f5f5f5;
+    font-family: \\82F9\65B9,\\\82F9\65B9,PingFang,Helvetica,Arial,sans-serif;
+}
+
+li{
+    list-style: none;
+}
+.container{
+}
+
+
+.search{
+    width:100vw;
+    background-color: #fff;
+    height: 10vw;
+    padding: 2vw 4vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search  .logo{
+    width: 18vw;
+    height: 6vw;
+    background-image: url(../img/logo.png);
+    background-size: 100% 100%;
+}
+
+.search .input{
+    height: 6vw;
+    width:70vw;
+    border-radius: 3vw;
+    background-color: #f5f5f5;
+    color: #aaa;
+    font-size: .9rem;
+    line-height: 6vw;
+    /* padding: 1.25vw 2vw; */
+    box-sizing: border-box;
+}
+
+.search span{
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    margin: 1.5vw 1vw 1.5vw 2vw;
+    background-image: url(../img/search.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+/* 当季热门的CSS */
+.hot{
+    display: flex;
+    width: 100vw;
+    height: 6vw;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    margin-top: 6vw;
+    /* background-color: #f08; */
+    justify-content: space-between;
+}
+.hot h1{
+    font-size: 1.5rem;
+    height: 100%;
+    line-height: 6vw;
+}
+
+.hot div{
+    font-size: 1rem;
+    height: 100%;
+    line-height: 6vw;
+    color: #11bf79;
+}
+.hot div::before{
+    content: '';
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../img/tip.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-bottom: .5rem;
+}
+/* 修饰月份的样式 */
+.mf{
+    width: 100vw;
+    height: 32px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-top: 5vw;
+}
+/* 去滚动条 */
+.mf::-webkit-scrollbar {
+    display: none;
+}
+.month{
+    display: flex;
+    width: 936px;
+    height: 32px;
+    justify-content: space-evenly;
+}
+
+.month li{
+    width:65px;
+    height: 32px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 32px;
+    background-color: #fff;
+    border:1px solid #dedede;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.month .active{
+    background-color: #11bf79;
+    border-color: #11bf79;
+    color: #fff;
+}
+
+
+/* 特色旅游景点 */
+.scenery{
+    width: 100vw;
+    height: 175px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-top: 5vw;
+}
+/* 去滚动条 */
+.scenery::-webkit-scrollbar {
+    display: none;
+}
+.scenery .place{
+    display: flex;
+    width: 879px;
+    height: 175px;
+    justify-content: space-evenly;
+}
+.scenery li{
+    width:165px;
+    height: 165px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #f09;
+    box-shadow: 0 5px 10px  rgb(189, 182, 182);
+    background-size: cover;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 270px;
+}
+/* .scenery li span{
+    margin-top: 120px;
+} */
+.scenery li:nth-child(1){
+    background-image: url(https://pic.qyer.com/public/place/themeinfo/2017/09/25/15063177804688/300x300);
+}
+.scenery li:nth-child(2){
+    background-image: url(https://pic.qyer.com/public/place/themeinfo/2017/09/25/15063177804688/300x300);
+}
+.scenery li:nth-child(3){
+    background-image: url(https://pic.qyer.com/public/place/themeinfo/2017/09/25/15063177804688/300x300);
+}
+.scenery li:nth-child(4){
+    background-image: url(https://pic.qyer.com/public/place/themeinfo/2017/09/25/15063177804688/300x300);
+}
+.scenery li:nth-child(5){
+    background-image: url(https://pic.qyer.com/public/place/themeinfo/2017/09/25/15063177804688/300x300);
+}

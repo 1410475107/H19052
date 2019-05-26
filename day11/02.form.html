@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        账号：  <input type="text" name="username"  autofocus>  <br>
+        密码： <input type="password" name="passwd">  <br>
+        性别： <input type="radio" name="gender" value="1"> 男生  
+        <input type="radio" name="gender" value="2" id="g2"> <label for="g2">女生</label> 
+        <input type="radio" name="gender" value="0"> 保密  <br>
+        爱好：
+            <input type="checkbox" value="读书"> 读书
+            <input type="checkbox" value="运动"> 运动
+            <input type="checkbox" value="编程"> 编程
+            <input type="checkbox" value="看电影"> 看电影
+
+            <br>
+        <select name="" id="" multiple>
+            <option value="1">选项1</option>
+            <option value="2">选项2</option>
+            <option value="3">选项3</option>
+        </select>
+
+        <hr>
+        手机号：<input type="tel" name="tel">
+
+        <br>
+        年龄：
+            <input type="range" >   <br>
+            时间：<input type="datetime-local" name="datetime">
+        <br>
+        文件：<input type="file" name="img" multiple>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #e5e5e5;
+}
+
+.tab {
+    width: 100vw;
+    max-width: 640px;
+    height: 15vw;
+    min-height: 32px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -2px 15px #ccc;
+    /* 变成容器 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tab li {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.tab li span {
+    font-size: 2rem;
+    color: #f08;
+}

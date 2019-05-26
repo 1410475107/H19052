@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-wrap</title>
+    <style>
+    .container{
+        width: 550px;
+        height: 360px;
+        background-color: #eee;
+        /* 弹性盒子 */
+        display: flex;
+        /* 使用flex-direction定义主轴的方向:row|col|row-reverse|column-reverse */
+        /* flex-direction: row; */
+        /* 如果项目总宽度超出容器，如何处理 */
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+        /* 在主轴上的对其方式 space-evenly*/
+        justify-content: center;
+        /* 在交叉轴上的对其方式 */
+        align-items: stretch;
+        /* 如果有多个轴线 */
+        align-content: space-between;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: #f08;
+        margin: 1px;
+        box-sizing: border-box;
+    }
+    .item:nth-child(3){
+        /* padding-top: 20px; */
+        /* line-height: 100px; */
+        order: 1;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- 容器 -->
+    <div class="container">
+        <!-- 项目 -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

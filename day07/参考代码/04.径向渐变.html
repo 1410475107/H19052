@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 400px;
+				height: 300px;
+				/*径向渐变  默认圆心在中心点*/
+				/*background-image: radial-gradient(red,yellow);*/
+				/*background-image: radial-gradient(red,yellow,blue);*/
+				/*默认是椭圆  改变为圆circle*/
+				/*background-image: radial-gradient(circle,red 10%,yellow 30%,black 60%);*/
+				
+				/*100px是渐变大小的宽度，30px渐变大小的高度   50%:圆心的x轴为50%  50px圆心的y轴距离顶部为50px*/
+				/*background: radial-gradient(100px 30px at 50% 50px,red,yellow,blue);*/
+				/*带前缀的 第一个是圆心的位置，第二个才是渐变的大小*/
+				/*background: -webkit-radial-gradient(50% 50px,100px 30px ,red,yellow,blue);;*/
+				
+				/*background: radial-gradient(farthest-side at 50% 50px,red,yellow);*/
+				background: repeating-radial-gradient(red 10%,yellow 12%,green 14%);
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

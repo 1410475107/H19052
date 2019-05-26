@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        .mydiv{
+            width: 100px;
+            height: 100px;
+            background-color: #812;
+            /* cursor：定义鼠标形状 */
+            cursor: pointer;
+        }
+        /* 伪类选择器 */
+        .mydiv:hover{
+            background-color: #f08;
+            color: #fff;
+        }
+        input{
+            width: 240px;
+            height: 32px;
+            border: 1px solid rgb(117, 113, 115);
+            outline: none;
+        }
+        /* 获取焦点的伪类选择器 */
+        input:focus{
+            border:2px dashed #f08;
+        }
+        a{
+            /* 定义下划线 */
+            text-decoration: none;
+        }
+        /* LoVe HAte */
+        a:link{
+            color: rgb(189, 201, 197);
+        }
+        /* 访问过的 */
+        a:visited{
+            color: #f08;
+        }
+        a:hover{
+            color: aquamarine;
+        }
+        a:active{
+            color: rgb(55, 15, 129);
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="mydiv">
+        鼠标移入
+    </div>
+
+    <input type="text">
+        <br>
+    <a href="http://www.sgmtu.edu.cn/">文字信息</a>
+</body>
+</html>

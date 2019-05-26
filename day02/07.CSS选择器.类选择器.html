@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>类选择器</title>
+    <style>
+        .mydiv{
+            /* 定义元素的宽度和高度 */
+            width: 200px;
+            height: 200px;
+            /* 背景颜色 */
+            background-color:#d8102e;
+        }
+        .div{
+            color: #fff;
+        }
+
+        .sanjiao{
+            width:0;
+            border-width:40px;
+            border-style:solid;
+            border-color:red transparent blue green; /* transparent 设置边框颜色透明 */
+        }
+    </style>
+</head>
+<body>
+
+       
+        
+        <div class="sanjiao">
+        </div>
+
+    <div class="mydiv div">
+        我的一个盒子
+    </div>
+
+    <p class="mydiv">我的一个段落</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器的学习</title>
+    <style>
+       a[title]{
+           /* 定义文字大小 */
+           font-size: 24px;
+       }
+       /* 指定具体的属性值 */
+       a[title="在都匀"]{
+           color: rgb(5, 148, 5);
+       }
+       /* 包含指定的关键词：* */
+       a[title*="成都"]{
+           color: rgb(245, 10, 10);
+       }
+       /* 结束位置：$ */
+       a[title$='学生']{
+           color:#c0f309;
+       }
+       /* 开始位置：^ */
+       a[title^='爱美']{
+        color: pink;
+       }
+
+       input{
+           width: 240px;
+           height: 32px;
+           /* 定义边框线： 粗细，形状，颜色 */
+           border:1px solid #f08;
+           /* 去除输入框获取焦点时候的外边线 */
+           outline: none;
+       }
+       input[type="password"]{
+           /* 单独定义边框线的颜色 */
+           border-color: blue;
+       }
+       input[name="tel"]{
+            font-size: 16px;
+            color: #f08;
+            /* font-weight: 加粗属性 */
+            font-weight: bolder;
+            /* font-family: 定义字体 */
+            font-family: 楷体;
+       }
+    </style>
+</head>
+
+<body>
+    
+    <a href="#" title="在都匀">黔南师范学院</a>
+    <a href="#" title="在成都">华清远见</a>
+    <a href="#" title="是一个爱学习的学生">陈忠来</a>
+    <a href="#" title="爱美的学生也爱学习">王富琼</a>
+    <br>
+    <!-- 表单的输入框 -->
+    账号：<input type="text" name="username">  <br>
+    手机号：<input type="text" name="tel">  <br>
+    <input type="password" name="">
+
+</body>
+</html>

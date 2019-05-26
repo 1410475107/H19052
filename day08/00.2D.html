@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2D</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(103, 12, 221);
+            position: absolute;
+            left:200px;
+            top:200px;
+            z-index: 1;
+        }
+        .mydiv{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border-top: 1px solid #f08;
+            background-color: rgba(194, 78, 78, .5);
+            position: relative;
+            z-index: 2;
+            /* transition: all 5s; */
+        }
+
+        .mydiv{
+            /* transform: translate(-100px, -100px); */
+            /* transform: rotate(90deg); */
+             /* 缩放 */
+            /* transform: scale(2, 0.6); */
+            /* 倾斜 */
+            transform: skew(30deg, 20deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="mydiv">1</div>
+    <div class="mydiv"></div>
+</body>
+</html>

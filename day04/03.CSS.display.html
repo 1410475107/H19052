@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        li{
+            list-style: none;
+        }
+        li {
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #345;
+            /* 把行内标签转换成块级标签 */
+            /* display: block; */
+            /* 转成行内块级 */
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #f08;
+            color: #fff;
+        }
+
+        ul {
+            font-size: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            关于我们
+        </li>
+        <li>
+            我的订单
+        </li>
+        <li>
+            个人中心
+        </li>
+    </ul>
+</body>
+
+</html>

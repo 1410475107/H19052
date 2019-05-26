@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后代选择器和子代选择器</title>
+    <style>
+        ul.students>li {
+            color: red;
+        }
+        ul.students>li{
+            border: 1px solid #621;
+        }
+        ul.course li{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="students">
+        <li>罗娟</li>
+        <li>舒登波</li>
+        <li class="open">莫莉</li>
+        <li>陈忠来</li>
+        <li>
+            谢文杰
+            <ul class="course">
+                <li>H5</li>
+                <li>JAVA</li>
+                <li>嵌入式</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

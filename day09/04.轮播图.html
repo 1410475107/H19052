@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .around{
+            width: 590px; height: 470px;
+            overflow: hidden;
+            background-color: #f08;
+            position: relative; margin:  50px auto;
+        }
+        .around ul{
+            width: 2950px; height: 470px;
+            position: absolute;
+            left: 0; top: 0;
+            animation: playimg 15s;
+            /* 循环次数 */
+            animation-iteration-count:infinite;
+        }
+        .around ul:hover{/* 鼠标一上来暂停 */
+            animation-play-state: paused;
+        }
+        @keyframes playimg{
+            10%, 20%{ left:0; }
+            20%, 30%{ left:-590px; }
+            40%, 50%{ left:-1180px; }
+            60%, 70%{ left:-1770px; }
+            80%, 90%{ left:-2360px; }
+        }
+        .around ul li{
+            width: 590px; height: 470px; float: left;
+        }
+        .around ul::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="around">
+        <ul>
+            <li> <img src="https://img11.360buyimg.com/babel/s590x470_jfs/t29698/299/1382675986/84338/803fc1d1/5cde4b81N30412284.jpg!q90!cc_590x470.webp" alt=""> </li>
+            <li><img src="https://imgcps.jd.com/ling/27529413771/6L-Q5Yqo5r2u5rWB5aSn54mM/5LiK5paw/t-5bda9cd0ba82b80306af795a/414b4aab.jpg" alt=""></li>
+            <li> <img src="https://img1.360buyimg.com/pop/s590x470_jfs/t30058/124/1361045030/138555/4a0bf516/5cde1f21N62074476.jpg!q90!cc_590x470.webp" alt=""></li>
+            <li><img src="https://img1.360buyimg.com/pop/s590x470_jfs/t1/81524/20/122/91546/5ce2022dEa6760115/c468d0900671987f.jpg!q90!cc_590x470.webp" alt=""></li>
+            <li><img src="https://img1.360buyimg.com/pop/s590x470_jfs/t29836/44/1618622955/180106/3ec0cbee/5ce608e4N529ea84a.jpg!q90!cc_590x470.webp" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

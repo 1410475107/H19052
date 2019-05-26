@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 400px;
+				height: 500px;
+				background: yellow;
+				margin: 0 auto;
+				position: relative;
+			}
+			.box div{
+				width: 40px;
+				height: 50px;
+				background: red;
+				position:absolute;
+				/*margin-top:-25px;*/
+				transform: translateY(-25px);
+			}
+			.box div:nth-child(1){
+				left: 0px;
+				top:50%;
+			}
+			.box div:nth-child(2){
+				right: 0px;
+				top:50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div></div>
+			<div></div>
+			
+		</div>
+	</body>
+</html>

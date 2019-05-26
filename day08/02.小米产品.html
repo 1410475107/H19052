@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米产品</title>
+    <style>
+        /* 清除浏览器默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            /* 设置整个窗口的背景颜色 */
+            background-color: #f5f5f5;
+        }
+        a {
+            /* 通用样式定义在通用选择器里面 */
+            text-decoration: none;
+        }
+        .xm {
+            margin: 60px;
+            width: 235px;
+            height: 300px;
+            background-color: #fff;
+            /* 位子水平方向居中 */
+            text-align: center;
+            font-size: 14px;
+            position: relative;
+            /* 超出部分隐藏 */
+            overflow: hidden;
+            /* 过渡效果 */
+            transition: transform .5s;
+        }
+        .xm>span {
+            width: 64px;
+            height: 20px;
+            background-color: #e53935;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+            /* 行内标签没有宽度和高度 */
+            display: block;
+            /* 盒子在水平方向居中 */
+            margin: 0 auto;
+            /* 添加相对定位属性是为了让z-index起作用 */
+            position: relative;
+            z-index: 99;
+        }
+        .xm img {
+            width: 150px;
+            height: 150px;
+            margin: 10px 0;
+            transition: transform .3s;
+        }
+        .xm a {
+            color: #333;
+            /* font-size: 12px; */
+        }
+        .xm .price {
+            margin: 30px auto;
+        }
+        .xm .price span {
+            color: #ff6700
+        }
+        .xm .price del {
+            color: #b0b0b0
+        }
+        .xm .rate {
+            width: 235px;
+            height: 78px;
+            background-color: #ff6700;
+            font-size: 12px;
+            color: #fff;
+            padding: 10px 30px;
+            /* content+padding+border = width */
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            bottom: -78px;
+            /* display: none; */
+            transition: transform .5s;
+        }
+        .xm .rate span {
+            display: block;
+            text-align: left;
+        }
+        /* 结构选择器 */
+        .xm .rate span:first-child {
+            margin-bottom: 10px;
+        }
+        .xm .rate span:last-child {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .xm:hover .rate {
+            /* 让盒子平移上去 */
+            transform: translate(0, -78px);
+        }
+        .xm:hover img{
+            /* transform: scale(1.2); */
+        }
+        .xm:hover{
+            transform: translate(0, -5px);
+            /* 给盒子加阴影效果 */
+            box-shadow:  0px 8px 30px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="xm">
+        <span>减500元</span>
+        <img src="https://i1.mifile.cn/a4/xmad_15512365381648_yZpKS.jpg" alt="">
+        <p><a href="##"> 米家互联网洗烘一体机10kg</a></p>
+        <div class="price">
+            <span>1199元</span>
+            <del>2999元</del>
+        </div>
+        <div class="rate">
+            <span>
+                空调很好，杠杠滴，颜值杠杠滴，帅呆了
+            </span>
+            <span>
+                来自于 星星的你 的评价
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

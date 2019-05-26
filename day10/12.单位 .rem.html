@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rem</title>
+    <style>
+
+        html {
+            font-size: 16px;
+        }
+        /* @media screen and (max-width:480px){
+            html{
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (min-width:481px) and (max-width:800px){
+            html{
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (min-width:801px) and (max-width:1400px){
+            html{
+                font-size: 24px;
+            }
+        }
+        @media screen and (min-width:1401px) {
+            html{
+                font-size: 32px;
+            }
+        } */
+        .mydiv {
+            /* font-size: 14px; */
+        }
+        .mydiv div {
+            font-size: 1rem;
+            background-color: #345;
+            width: 4rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div>
+            文字信息
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        (function (doc, win) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 640) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                            }
+                     };
+        
+                    if (!doc.addEventListener) return;
+                    win.addEventListener(resizeEvt, recalc, false);
+                    doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);			
+        </script>
+</body>
+
+</html>

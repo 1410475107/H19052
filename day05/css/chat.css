@@ -1,0 +1,96 @@
+*{margin: 0; padding: 0;}
+li{
+    list-style: none;
+}
+/* 如果要让100%起作用 */
+html,body{
+    height: 100%;
+}
+.chat{
+    /* 看着顺眼点 */
+    /* margin: 50px; */
+    width: 370px;
+    /* height: 400px; */
+    /* height: 90%; */
+    max-height: 500px;
+    background-color: #eee;
+    /* 定义内边距 */
+    padding: 15px 20px 0 10px;
+    overflow: auto;
+}
+.chat::-webkit-scrollbar {
+    display: none;
+}
+/* 定义头像 */
+.header{
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    /* 超出部分隐藏 */
+    overflow: hidden;
+}
+.chat .content>div{
+    float: left;
+}
+.header img{
+    width: 48px;
+    height: 48px;
+}
+.chat .c{
+    width: 280px;
+    height: auto;
+    /* 定义最小高度 */
+    min-height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 16px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 幼圆;
+    color: #333;
+    font-weight: 500;
+    line-height: 21px;
+    position: relative;
+}
+/* 下边距 */
+.content{
+    margin-bottom: 15px;
+}
+/* 清除浮动 */
+.content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.chat .c::after{
+    content: '';
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    border-right-color:#fff; 
+    position: absolute;
+    left: -20px;
+    top: 15px;
+}
+/* 个性化定义 */
+.chat .self>div{
+    float: right;
+}
+.chat .self .c{
+    background-color: #95dd44;
+    margin-left: 0;
+    margin-right: 16px;
+}
+
+.chat .self .c::after{
+    border-right-color:transparent;
+    border-left-color:#95dd44; 
+    /* left的优先级高于right */
+    left: 300px;
+    top: 15px;
+}
+
+.self {
+
+}

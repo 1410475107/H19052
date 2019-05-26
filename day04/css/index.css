@@ -1,0 +1,14 @@
+.mydiv{
+    width: 200px;
+    height: 200px;
+    /* 设置背景图片：背景图片的优先级高于背景颜色 */
+    /* 路径问题 */
+    background-image: url(../image/59.jpg);
+    background-color: #f08;
+    /* 控制背景图片是否平铺：repeat  no-repeat repeat-x  repeat-y */
+    background-repeat: no-repeat;
+    /* 改变背景图片的大小 */
+    /* background-size: 100px 100px; */
+    /* background-size: cover; */
+    background-position: center center;
+}

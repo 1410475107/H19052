@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* div:not(.father){ */
+        .father>div{
+            width: 200px;
+            height: 100px;
+            /* float: left; */
+            float: right;
+        }
+        .my1{
+            background-color: #f09;
+        }
+        .my2{
+            background-color: #239;
+        }
+        .my3{
+            background-color: #590;
+        }
+        p{
+            width: 300px;
+            height: 200px;
+            background-color: #90a;
+        }
+        .clear{
+            display: block;
+            width: 100%;
+            height: 0;
+            clear: both;
+        }
+        .father{
+            width: 100%;
+            /* height: 100px; */
+        }
+        /* 推荐的浮动清除方式 */
+        .father::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="my1">内容1</div>
+        <div class="my2">内容2</div>
+        <div class="my3">内容3</div>
+    </div>
+    <!-- <i class="clear"></i> -->
+    <p></p>
+</body>
+</html>

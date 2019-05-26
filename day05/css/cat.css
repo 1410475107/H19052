@@ -1,0 +1,104 @@
+/* 可以一个标签一个标签的写出来，使用并集选择器 */
+*{margin:0;padding:0;}
+html, body{width:100%}
+/* 全局定义的样式尽可能的写在前面 */
+/* 优先级问题：就近原则 */
+li{
+    /* 清除li标签前面的点 */
+    list-style: none;
+}
+body{
+    font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+a{
+    font-size: 14px;
+    color:#666;
+    text-decoration: none;
+}
+/* 鼠标移上来 */
+a:hover{
+    color: #e33333;
+}
+#cat{
+    width: 100%;
+    min-width: 1190px;
+    height: 32px;
+    background-color: #e3e4e5;
+}
+
+#cat .menu{
+    width: 1190px;
+    height: 100%;
+    /* 水平居中： */
+    margin: 0 auto;
+    /* background-color: #f08; */
+}
+#cat .menu>ul{
+    width: 100%;
+    height: 100%;
+}
+#cat .menu>ul>li{
+    float: right;
+    width: 64px;
+    text-align: center;
+    /* 行高 */
+    line-height: 32px;
+    position: relative;
+}
+/* 找id是cat的盒子 在他的下面找到所有的 .menu */
+/* 在.menu里面找到所有的ul */
+/* 在ul的儿子里面找到class是line的所有的li标签 */
+#cat .menu ul>li.line{
+    width: 1px;
+    height: 14px;
+    border-right: 1px solid #c3c4c5;
+    margin: 9px 6px;
+}
+/* 属性选择器 */
+#cat .menu ul>li a[href="./my.html"]{
+    color: #e33333;
+}
+/* 子菜单 */
+#cat .menu ul>li.f:hover .child{
+    display: block;
+}
+#cat .menu ul>li.f:hover{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    width: 62px;
+    height: 31px;
+    line-height: 30px;
+}
+#cat .menu ul>li .child{
+    width: 280px;
+    height: 160px;
+    background-color: #fff;
+    position: absolute;
+    border-left: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    left: -1px;
+    top: 31px;
+    font-size: 0;
+    display: none;
+}
+/* 子菜单分开 */
+#cat .menu ul>li .child .top{
+    width: 270px;
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+}
+#cat .menu ul>li .child>li{
+    padding: 15px 0 15px 10px;
+}
+/* #cat .menu>ul>li */
+#cat .menu>ul>li .child>li li{
+    font-size: 12px;
+    float: left;
+    width: 135px;
+    text-align: left;
+    line-height: 22px!important;
+}
+
+
+

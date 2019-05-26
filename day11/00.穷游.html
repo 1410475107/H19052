@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 进行移动端布局时，这个不能少 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>穷游</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶部搜索部分 -->
+        <div class="search">
+            <div class="logo"></div>
+            <div class="input">
+                <span class="icon-search"></span>
+                搜索国家、城市、景点、美食
+            </div>
+        </div>
+        <!-- 当季热门 -->
+        <div class="hot">
+            <h1>当季热门</h1>
+            <div>
+                &nbsp;还没有护照？
+            </div>
+        </div>
+        <!-- 12个月份 -->
+        <div class="mf">
+            <ul class="month">
+                <li>1月</li>
+                <li>2月</li>
+                <li class="active">3月</li>
+                <li>4月</li>
+                <li>5月</li>
+                <li>6月</li>
+                <li>7月</li>
+                <li>8月</li>
+                <li>9月</li>
+                <li>10月</li>
+                <li>11月</li>
+                <li>12月</li>
+            </ul>
+        </div>
+
+        <!-- 特色景点 -->
+        <div class="scenery">
+            <ul class="place">
+                <li>
+                    <span>法国·巴黎</span> </li>
+                <li>2月</li>
+                <li>3月</li>
+                <li>4月</li>
+                <li>5月</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '24px';
+                    } else {
+                        docEl.style.fontSize = 16 * (clientWidth / 500) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);			
+    </script>
+</body>
+
+</html>

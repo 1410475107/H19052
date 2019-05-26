@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兄弟选择器</title>
+    <style>
+        /* 相邻的下一个兄弟 */
+        .mydiv+div{
+            color: rgb(240, 13, 13);
+        }
+        .mydiv~div{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>我的第0个盒子</div>
+    <div class="mydiv">
+        我的一个盒子
+    </div>
+    <p>这是我的一段文字</p>
+    <div>我的第二个盒子</div>
+    <div>我的第三个盒子</div>
+    <div>我的第四个盒子</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义字体库</title>
+    <style>
+        @font-face {
+            /* 给自定义字体库取名字 */
+            font-family: iconfont;
+            src: url(./fonts/iconfont.eot);
+            src: url(./fonts/iconfont.eot?#iefix) format("embedded-opentype"),
+                 url(./fonts/iconfont.woff) format("woff"),
+                 url(./fonts/iconfont.ttf) format("truetype"),
+                 url(./images/iconfont.svg#iconfont) format("svg")
+        }
+        .mydiv {
+            font-size: 32px;
+            font-family: iconfont,sans-serif;
+        }
+        .mydiv .iconfont{
+            font-style: normal;
+            font-size: 24px;
+            color: red;
+            font-weight: bolder;
+            text-shadow: 1px 1px 1px #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        我的文字信息
+        <i class="iconfont">&#xe605;</i>
+
+        <i class="iconfont">&#xe603;</i>
+        <i class="iconfont">&#xe604;</i>
+        <i class="iconfont">&#xe602;</i>
+        <i class="iconfont">&#xe600;</i>
+        <i class="iconfont">&#xe601;</i>
+        <i class="iconfont">&#xe607;</i>
+        <i class="iconfont">&#xe606;</i>
+    </div>
+
+</body>
+
+</html>

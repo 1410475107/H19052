@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文本信息</title>
+    <style>
+    #mydiv{
+        text-shadow: 1px 1px 1px #f08;
+        width: 300px;
+        height: 32px;
+        line-height: 32px;
+        /* 超出部分隐藏 */
+        overflow: hidden;
+        background-color: #89a;
+        /* 在横向隐藏：不能换行 */
+        white-space: nowrap;
+        /* 超出部分显示成省略号 */
+        text-overflow: ellipsis;
+    }
+    .mydiv{
+        width: 300px;
+        line-height: 32px;
+        background-color: rgb(54, 163, 60);
+        /* 当当前行放不下的时候：独立的词语是否分开 */
+        word-break: keep-all;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="mydiv">
+            标签选择器和伪元素选择器标签选择器和伪元素选择器标签选择器和伪元素选择器标签选择器和伪元素选择器
+    </div>
+    <div class="mydiv">
+            标签选择器和伪元素选择
+            zheliyouge hench angdeyingwendanci
+            器标签选择器
+            和伪元素选择器标签选择器，选择器标签选择器和伪元素选择器
+    </div>
+</body>
+</html>

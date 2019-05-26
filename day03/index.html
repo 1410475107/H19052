@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav li {
+            /*后代选择器*/
+            /* border:1px solid red; */
+            /* list-style-type: square; */
+            list-style: none;
+        }
+        
+li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+}
+ 
+li::before {
+  content: "• "; /* 自定义图标，也可以使用字体图标 如：content: "\f105"; font-family: FontAwesome;*/
+  color: #ABCDEF; /* 自定义颜色 */
+}
+        .nav>li {
+            /*子元素选择器*/
+            border: 1px solid red;
+            color: red;
+        }
+
+        .mydiv {
+            background-color: #089;
+            /* text-indent: 2em; */
+            text-transform: uppercase;
+        }
+
+        #box {
+            width: 300px;
+            height: 300px;
+            background: #ddd;
+            margin-top: 100px;
+            border: 1px solid #f09;
+            box-shadow: 5px 5px 1px;
+        }
+
+        #base {
+            margin-top: 100px;
+            height: 50%;
+            background: #AF9BD3;
+        }
+
+        p::first-letter {
+	color: red;
+  	font-size: 50px;
+}
+p::first-line {
+	color: green;
+}
+p::selection {
+	color: blue;
+}
+
+
+
+.father {
+		width: 400px;
+		height: 400px;
+		background-color: pink;
+		margin: 50px auto;
+		position: relative;
+	}
+	
+	/*子元素垂直加水平居中*/	
+	.hr-ve {
+		width: 100px;
+		height: 50px;
+		background-color: darkgoldenrod;
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+		top: 50%;
+		margin-top: -25px;
+	}
+
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>一级菜单
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+    <div class="mydiv">
+
+        text-transform用于转换文本的大小写（主要用于英文）
+    </div>
+
+
+    <div id="box">
+        <div id="base"></div>
+    </div>
+
+    <h2>锦上添花</h2>
+    <p>锦上添花，读音：jǐn shàng tiān huā ，汉语成语。释义：意指在美丽的锦织物上再添加鲜花。比喻略加修饰使美者更美，引申比喻在原有成就的基础上进一步完善。 出处： 宋 黄庭坚 《了了庵颂》：“又要 涪翁 作颂，且图锦上添花。” 此外， 清 李渔 《凰求凤·让封》：“三位夫人恭喜贺喜，又做了状元的夫人，又进了簇新的房子，又释了往常的嫌隙，真个是锦上添花。” 毛泽东 《在延安文艺座谈会上的讲话》二：“对于他们，第一步需要还不是‘锦上添花’，而是‘雪中送炭’。所以在目前条件下，普及工作的任务更为迫切。”
+    </p>
+
+
+    <div class="father">
+            <div class="hr-ve"></div>
+        </div>
+
+</body>
+
+</html>

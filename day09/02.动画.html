@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: #f08;
+            /* 动画 */
+            animation: mymove 5s;
+            /* 等待时间 */
+            animation-delay: 3s;
+            position: absolute;
+        }
+        @keyframes mymove{
+            from{
+                left: 0;
+            }
+            to{
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="mydiv">
+
+    </div>
+
+</body>
+</html>

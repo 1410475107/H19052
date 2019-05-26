@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜单背景渐变</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 240px;
+            height: 90px;
+            background: linear-gradient(90deg, rgba(211, 102, 39, .8), rgba(238, 160, 115, .5));
+        }
+        ul li{
+            /* 去掉点 */
+            list-style: none;
+            width: 50%;
+            height: 50%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            float: left;
+            text-align: center;
+            line-height: 45px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        ul li:nth-child(2){
+            border-left:0;
+            border-bottom:0;
+        }
+        ul li:nth-child(1){
+            border-bottom:0;
+        }
+        ul li:nth-child(4){
+            border-left:0;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>酒店</li>
+        <li>团购</li>
+        <li>特价</li>
+        <li>民宿</li>
+    </ul>
+</body>
+</html>

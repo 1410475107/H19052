@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子在水平方向居中</title>
+    <style>
+        .f{
+            width: 400px;
+            height: 400px;
+            background-color: #276;
+            margin: 0 auto;
+        }
+        .my {
+            width: 200px;
+            height: 200px;
+            background-color: #f76;
+            /* 让盒子在水平方向居中：父级盒子里面 */
+            /* 保证外边距左右的值是auto */
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="f">
+        <div class="my">
+            盒子在水平方向居中
+        </div>
+    </div>
+</body>
+
+</html>

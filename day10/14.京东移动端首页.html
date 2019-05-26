@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端首页</title>
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div>随便写一点内容</div>
+        <!-- 底部导航：tab-bar -->
+        <ul class="tab">
+            <li>
+                <span class="iconfont icon-home"></span>
+                <div>首页</div>
+            </li>
+            <li>
+                <span class="iconfont icon-fenlei"></span>
+                <div>分类</div>
+            </li>
+
+            <li>
+                <span class="iconfont icon-lihe"></span>
+                <div>拼购</div>
+            </li>
+            <li>
+                <span class="iconfont icon-tubiaolunkuo-"></span>
+                <div>购物车</div>
+            </li>
+            <li>
+                <span class="iconfont icon-geren"></span>
+                <div>个人</div>
+            </li>
+        </ul>
+
+    </div>
+
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '24px';
+                    } else {
+                        docEl.style.fontSize = 24 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);			
+    </script>
+
+</body>
+
+</html>

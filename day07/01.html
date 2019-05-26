@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画效果</title>
+    <style>
+        .mydiv {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 100px;
+            top: 30px;
+            background-color: #f08;
+            animation: mymove1 3s;
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
+            animation-direction: reverse;
+        }
+        .mydiv:hover{
+            animation-play-state: paused;
+        }
+        @keyframes mymove {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 300px;
+            }
+        }
+
+        @keyframes mymove1{
+            0% {left: 100px;}
+            50% {left: 300px;}
+            100% {left: 100px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+
+    </div>
+</body>
+
+</html>

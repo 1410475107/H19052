@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			li {
+				list-style: none;
+				float: left;
+			}
+			ul {
+				width: 1770px;
+				height:470px ;
+				animation:mybanner 10s linear infinite;
+				/* animation-direction: reverse; */
+			}
+			.banner {
+				width: 590px;
+				height: 470px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			@keyframes mybanner{
+				0%,27%{
+					margin-left: 0px;
+				}
+				
+				37%,64%{
+					margin-left: -590px;
+				}
+				74%,100%{
+					margin-left: -1180px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		 <div class="banner">
+		 	<ul>
+		 		<li>
+		 			<img src="https://img1.360buyimg.com/pop/jfs/t26956/131/2431761582/58698/3d1039c5/5c01fc55N9bd70313.jpg"/>
+		 		</li>
+		 		<li>
+		 			<img src="https://img1.360buyimg.com/pop/jfs/t1/2997/24/9570/87028/5bad2e96E7df2d8c2/0f64a29f58c10657.jpg"/>
+		 		</li>
+		 		<li>
+		 			<img src="https://m.360buyimg.com/babel/jfs/t1/11136/20/15950/94095/5cac5af4E61963e0a/25a99e961ef8b814.jpg"/>
+		 		</li>
+		 	</ul>
+		 </div>
+	</body>
+</html>

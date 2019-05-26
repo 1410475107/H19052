@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单域</title>
+</head>
+
+<body>
+    <form action="./00.复习.html" method="GET" name="myform">
+        <span>账号：</span> 
+        <input type="text" name="username" value="" placeholder="请输入账号" /> <br>
+
+        <span>密码：</span> <input type="password" name="passwd" placeholder="请输入密码" /> <br>
+        <span>性别：</span>
+        <input type="radio" name="gender" value="1" id="gender1" /> <label for="gender1">男</label>
+        <input type="radio" name="gender" value="2" /> 女
+        <input type="radio" name="gender" value="0" checked="checked" /> 保密
+        <br>
+        <span>爱好：</span>
+        <input type="checkbox" name="hobby" value="读书"> 读书
+        <input type="checkbox" name="hobby" value="运动"> 运动
+        <input type="checkbox" name="hobby" value="编程"> 编程
+        <input type="checkbox" name="hobby" value="打游戏"> 打游戏
+        <br>
+        <span>住址：</span>
+        <select name="province">
+            <option value="0">=请选择省份=</option>
+            <option value="1" selected>贵州</option>
+            <option value="2">四川</option>
+            <option value="3">河南</option>
+        </select>
+        <select name="city">
+            <option value="0">=请选择省份=</option>
+            <option value="1" selected>都匀</option>
+            <option value="2">贵阳</option>
+            <option value="3">成都</option>
+            <option value="4">德阳</option>
+            <option value="5">郑州</option>
+        </select>
+
+        <input type="text" name="address">
+
+        <br>
+        <span>个人描述：</span>
+        <textarea name="description" cols="30" rows="3"></textarea>
+        <br>
+        <span>个人照片：</span>
+            <label for="mypic"><img src="./img/12.jpg" alt=""></label>
+            <!-- 下面的file是需要隐藏的：display:none -->
+            <input type="file" name="mypic" id="mypic" accept="image/*" style="display:none">
+        <br>
+        <input type="submit" value="确定注册">
+        <input type="reset" value="重新填写">
+    </form>
+</body>
+
+</html>

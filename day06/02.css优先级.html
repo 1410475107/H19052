@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优先级</title>
+
+    <style>
+        a {
+            /*特殊性值：0,0,0,1*/
+            color: yellow;
+        }
+        div a {
+            /*特殊性值：0,0,0,2*/
+            color: green;
+        }
+        .demo a {
+            /*特殊性值：0,0,1,1*/
+            color: black;
+        }
+        .demo input[type="text"] {
+            /*特殊性值：0,0,2,1*/
+            color: blue;
+        }
+        .demo *[type="text"] {
+            /*特殊性值：0,0,2,0*/
+            color: grey;
+        }
+        #demo a {
+            /*特殊性值：0,1,0,1*/
+            color: orange;
+        }
+        div#demo a {
+            color: rgb(91, 19, 224);
+        }
+    </style>
+</head>
+
+<body>
+    <!--适用第1行规则-->
+    <a href="">第一条应该是黄色</a>
+
+    <div class="demo">
+        <!--适用第4、5行规则，第4行优先级高-->
+        <input type="text" value="第二条应该是蓝色" />
+
+        <!--适用第2、3行规则，第3行优先级高-->
+        <a href="">第三条应该是黑色</a>
+    </div>
+
+    <div id="demo">
+        <!--适用第5、6行规则，第6行优先级高-->
+        <a href="">第四条应该是红色</a>
+    </div>
+</body>
+
+</html>

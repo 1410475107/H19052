@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				background: red;
+				position: absolute;
+				left: 0px;
+				top:0px;
+				animation-name: mymove;
+				animation-duration: 2s;
+				/*animation-timing-function:cubic-bezier(0,.9,.51,.98) ;*/
+				/*延时只会在第一次产生*/
+				animation-delay: 2s;
+				/*animation-iteration-count: 3;*/
+				animation-iteration-count: infinite;
+				/*animation-direction: reverse;*/
+				animation-direction: alternate-reverse;
+			}
+			/*定义动画*/
+			@keyframes mymove{
+				0% {
+					left:0px;
+					top:0px;
+				}
+				/*20% {
+					left: 500px;
+					top:0px;
+				}
+				40% {
+					left: 500px;
+					top:200px;
+				}*/
+				100%{
+					top:300px;
+					left: 300px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
